@@ -43,5 +43,38 @@ function mult(a,b){
 
 console.log(mult(5,10))
 
+function extern(){
+    console.log("Función externa")
+    function intern(){
+        console.log("Función interna")
+        }
+        intern()
+}
+extern()
 
+// FUNCIONES DE ÓRDEN SUPERIOR
+// Funciones que reciben otras funciones como argumentos
+function applyFunc(func, param){
+    func(param)
+}
 
+applyFunc(myFunc4, "función de órden superior")
+
+//forEach
+myArray = [1, 2, 3, 4]
+myArray.forEach((value) => console.log(value))
+
+myArray.forEach(function(value){
+    console.log(value)
+})
+
+mySet = new Set(["Anto", "Pic", "Best", 44,true])
+
+myMap = new Map([
+    ["Nombre", "Anto"],
+    ["email", "Anto@pic.es"],
+    ["Age", "44"]
+])
+
+mySet.forEach((value) => console.log(value))
+myMap.forEach((value) => console.log(value))
