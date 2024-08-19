@@ -1,0 +1,46 @@
+
+let myArray = [1, 2, 3, 4]
+
+let person = {
+    name: "Anto", 
+    edad: 44,
+    alias: "Er_Pica"
+    mail: "erpica@erpica.pic"
+}
+
+
+
+myValue = myArray[1]
+console.log(myArray)
+
+// Desestructuración: Capacidad de extraer valores y asignarlos a variables de manera concisa
+//Sintaxis en arrays:
+let [myValue0, myValue1, myValue2, myValue3, myValue4] = myArray
+console.log(myValue0)
+console.log(myValue1)
+console.log(myValue2)
+console.log(myValue3)
+console.log(myValue4)
+
+//Sintaxis arrays con valores predeterminados
+let [myValue5, myValue6, myValue7, myValue8=0, myValue9=0] = myArray
+console.log(myValue5)
+console.log(myValue6)
+console.log(myValue7)
+console.log(myValue8)
+console.log(myValue9)
+console.log("----")
+let [myValue10, , , myValue13] = myArray // solo quiero poner valor a alguna de las variables (en este caso primera y última)
+console.log(myValue10)
+console.log(myValue13)
+
+//Sintaxis objetos
+let {name, age, alias} = person // se ponen llaves porque es un objeto
+console.log(name)
+
+//Sintaxis objetos con valores predeterminados
+let {name, edad, alias, mail} = person
+console.log(name)
+console.log(edad)
+console.log(alias)
+console.log(mail)

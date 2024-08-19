@@ -136,7 +136,7 @@ invertirCadena("hola")
 console.log(cadenaAlReves)*/
 
 // 10. Crea una función que calcule el factorial de un número dado
-let n, f = 1, i
+/*let n, f = 1, i
 function calculaFactorial (n){
     for (i=1; i<=n; i++){
         f = f*i
@@ -145,4 +145,4 @@ function calculaFactorial (n){
 }
 
 calculaFactorial(5)
-console.log(f)
+console.log(f)*/
