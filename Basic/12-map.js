@@ -1,4 +1,4 @@
-let myMap = new Map()
+//let myMap = new Map() // no funciona
 
 
 myMap = new Map([
@@ -21,6 +21,11 @@ console.log(myMap)
 myMap.set("Alias","Pic")
 myMap.set("Alias","Er_pica")
 console.log(myMap)
+
+console.log()
+console.log("Para imprimir las entradas:")
+console.log()
+
 console.log(myMap.entries())
 
 console.log(myMap.get("Alias"))

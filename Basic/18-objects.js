@@ -78,11 +78,12 @@ console.log(person)
 console.log(person2)
 //propiedades por valor o por referencia (referente al sitio en memoria no al valor que tiene dentro, por eso da falso)
 // Para compararlos habría que comparar propiedad a propiedad
-console.log(person === person2)
+console.log(person === person2) // me dará falso aunque sean iguales, no se pueden comparar objetos así
 console.log(person.name === person2.name)
 console.log("----")
 
 // Iteración
+console.log("iteracion:")
 for (let clave in person){
     console.log(clave + ": "+ person[clave])
 }
@@ -99,12 +100,12 @@ let person3 = {
         name: "programador",
         experiencia: "15",
         trabajo: function(){
-            console.log(`El trabajo es: ${this.name}`)
+            console.log(`El trabajo es: ${this.name}`)//para hacer referencia hay que llamar al obj con this
         }
     }
 }
 
-//Para acceder a los métodos se usa this(si no te va a poner undefined0)
+//Para acceder a los métodos se usa this(si no te va a poner undefined)
 person3.job.trabajo()
 
 //funciones como objetos
