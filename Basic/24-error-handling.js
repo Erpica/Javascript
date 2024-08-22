@@ -107,7 +107,7 @@ class Sum0IntegerError extends Error {
 
 
 try{
-    console.log(Sum0IntegerError(0,10))
+    console.log(SumInteger(0,10))
     //console.log(sumIntegers("5aa",10)) // si comento esta línea ya no hay error
 }catch (error){
     console.log("Se ha producido un error", error.message) // (1) aquí hago la llamada el mensage que creé antes

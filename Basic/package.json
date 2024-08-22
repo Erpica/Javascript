@@ -1,0 +1,6 @@
+
+
+{
+    "type": "module", 
+    "_comment": "Así le digo que nuestro programa va a funcionar como un módulo. Con ésto me permite importar y exportar"
+}
