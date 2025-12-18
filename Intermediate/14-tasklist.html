@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de tareas</title>
+    <style>
+        .resalted-text {
+            background-color: aquamarine;
+            color:cadetblue;
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: inline;
+        }
+        .contenedor-inline {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="padding: 25px;">Mis tareas</h1>
+    <input id="text" type="text" placeholder="Escribe una tarea" />
+    <button id ="button">Agregar tarea</button>
+    <ul id="list">
+        <h1 style="text-decoration: underline;">Ejercicios:</h1>
+        <li>
+            <h2>1. Crea un elemento (por ejemplo, un &lt;h1 id="title"&gt;) y cambia su contenido a ""¡Hola Mundo!"" al cargar la página</h2>
+        </li>    
+            <h1> Título de la página, ejercicio 1</h1>
+            <h1 id="title"> Título de la página, ejercicio 1</h1>
+        <li>
+            <h2>2. Inserta una imagen con id="myImage" y cambia su atributo src a otra URL</h2>
+            <img id="img-github" src="git-hub-party.png" width="200" height="200">
+        </li>
+        <li>
+            <h2>3. Crea un &lt;div id="box"&gt; sin clases y agrega la clase resaltado cuando se cargue la página</h2>
+            <div id="box"> Este id es una caja que se resalta al cargar la página</div>
+        </li>
+        <li>
+            <h2>4. Crea un párrafo con id="paragraph" y cambia su color de texto a azul</h2>
+            <p id="paragraph"> es el párrafo que cambiará de color</p>
+        
+        </li>
+        <li>
+            <h2>5. Agrega un botón que, al hacer clic, cree un nuevo elemento &lt;li&gt; con el texto "Nuevo elemento y lo agregue a una lista &lt;ul id="list"&gt;&lt;/ul&gt;</h2>
+            <div class="contenedor-inline">
+                <button id="liButton">Nuevo elemento</button>
+                <p>Lista editable:</p>
+                <ul id="editableList">
+                    <li>Elemento ejemplo</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <h2>6. Crea un párrafo con id="deleteParagraph" y un botón. Al hacer clic en el botón, elimina el párrafo del DOM</h2>
+            <div class="contenedor-inline">
+                <button id="buttonToDeleteParagraph">Delete</button>
+                <p id="paragraphToDelete"> Si pulsas el botón acabarás conmigo</p>
+            </div>
+        </li>
+        <li>
+            <h2>7. Crea un &lt;div id="content"&gt; con algún texto y reemplaza su contenido por un &lt;h2&gt; con el mensaje "Nuevo Contenido"</h2>
+            <div id="content">
+                <P>Texto que reemplazará su contenido</P>
+            </div>     
+        </li>
+        <li>
+            <h2>8. Crea un botón con id="greetBtn" y añade un evento que muestre una alerta con el mensaje ""¡Hola!" al hacer clic</h2>
+            <button id="greetBtn">Saludar</button>
+        </li>
+        <li>
+            <h2>9. Crea un &lt;input id="textInput"&gt; y un &lt;div id="result"&gt;. Al escribir en el input, el &lt;div&gt; se debe actualizarse mostrando lo que se escribe</h2>
+            <input id="textInput">
+            <div id="result"></div>
+        </li>
+        <li>
+            <h2>10. Crea un botón con id="backgroundBtn" y, al hacer clic, cambia el color de fondo del &lt;body&gt; a un color diferente</h2>
+            <button id="backgroundBtn"> Cambia el color de fondo</button>
+        </li>
+        
+
+    </ul>
+    <script src="15-taslist.js"></script>
+    <script src="16-dom-exercises.js"></script>
+</body>
+</html>
